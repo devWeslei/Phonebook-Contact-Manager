@@ -1,17 +1,19 @@
 # agenda_contatos
+## Running
+<p align="center">
+  <img alt="Demo" src="https://github.com/devWeslei/Phonebook-Contact-Manager/blob/main/assets/demo.gif">
+</p>   
 
-A new Flutter project.
+## About this Project
+A Phonebook contact manager project in Flutter.
 
-## Getting Started
+## Some Observations about this App
+-I had a issue starting the android emulator camera, the error was that the emulator was not allowed.
 
-This project is a starting point for a Flutter application.
+how to fix it: in the AndroidManifest.xml directory (android/app/debug/AndroidManifest.xml), I added the line:
+  
+`<uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>`
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-"# Phonebook-Contact-Manager" 
+## Functionalities
+-Singleton pattern.   
+-local database with SQFlite.
